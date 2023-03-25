@@ -1,10 +1,10 @@
 .calculator {
-  max-width: 400px; /* set maximum width */
+  max-width: 400px;
   margin: 0 auto;
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
-  background: linear-gradient(135deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5, #4f5bd5, #4f5bd5);
+  background: linear-gradient(to bottom right, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
 }
 
 @media screen and (min-width: 768px) {
@@ -25,7 +25,7 @@
 
 button {
   font-size: 20px;
-  background-color: #336699;
+  background-color: transparent;
   color: #fff;
   border: 1px solid #fff;
   border-radius: 5px;
@@ -34,5 +34,6 @@ button {
 }
 
 button:hover {
-  background-color: #254e7b;
+  background-color: #fff;
+  color: #405de6;
 }
