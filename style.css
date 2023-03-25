@@ -26,8 +26,7 @@
 
 button {
   font-size: 20px;
-  background-color: #fff;
-  background-image: linear-gradient(to bottom, #ed2a7b, #f05f3d, #f3c100, #86c85a, #33bbed, #4f5bd5);
+  background-color: blue;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -36,6 +35,6 @@ button {
 }
 
 button:hover {
-  background-image: linear-gradient(to bottom, #ed2a7b, #f05f3d, #f3c100, #86c85a, #33bbed, #4f5bd5);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: darkblue;
 }
+
