@@ -1,13 +1,17 @@
-let result = document.getElementById('result');
+let calculation = '';
 
-function insert(num) {
-  result.value += num;
+function insert(value) {
+  calculation += value;
+  document.getElementById('result').value = calculation;
 }
 
 function clearAll() {
-  result.value = '';
+  calculation = '';
+  document.getElementById('result').value = '';
 }
 
 function calculate() {
-  result.value = eval(result.value);
+  let result = eval(calculation);
+  document.getElementById('result').value = result;
+  calculation = '';
 }
