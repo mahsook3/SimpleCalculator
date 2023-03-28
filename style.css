@@ -1,40 +1,69 @@
+/* Reset default browser styles for consistency */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Set a minimum font size for accessibility */
+html {
+  font-size: 16px;
+  min-height: 100vh;
+}
+
+/* Improve contrast and legibility */
+body {
+  color: #333;
+  background-color: #f8f8f8;
+  line-height: 1.5;
+}
+
+/* Center the calculator on the page */
 .calculator {
   max-width: 400px;
   margin: 0 auto;
-  border: 1px solid #ccc;
   border-radius: 5px;
-  padding: 10px;
-  background: linear-gradient(to bottom right, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (min-width: 768px) {
-  .calculator {
-    max-width: 600px;
-  }
-}
-
+/* Add some padding to the display */
 .display {
-  margin-bottom: 10px;
+  padding: 10px;
+  text-align: right;
+  border-bottom: 1px solid #ccc;
 }
 
+/* Style the result field */
+#result {
+  font-size: 28px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+/* Style the buttons container */
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
+  gap: 10px;
+  padding: 10px;
 }
 
+/* Style the buttons */
 button {
-  font-size: 20px;
-  background-color: transparent;
-  color: #fff;
-  border: 1px solid #fff;
+  font-size: 24px;
+  color: #333;
+  background-color: #eee;
+  border: none;
   border-radius: 5px;
   padding: 10px;
   cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
 }
 
+/* Change button color on hover */
 button:hover {
-  background-color: #FFFFFF
-;
-  color: #405de6;
+  background-color: #ccc;
 }
