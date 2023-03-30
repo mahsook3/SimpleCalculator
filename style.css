@@ -24,7 +24,7 @@ body {
   max-width: 400px;
   margin: 0 auto;
   border-radius: 5px;
-  background-color: #fff;
+  background-image: linear-gradient(45deg, #fd5d94 0%, #ec4a8e 25%, #bc3a7a 50%, #8a2c6a 75%, #6a1b9a 100%);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -41,6 +41,7 @@ body {
   border: none;
   outline: none;
   background-color: transparent;
+  color: #fff;
 }
 
 /* Style the buttons container */
@@ -54,8 +55,8 @@ body {
 /* Style the buttons */
 button {
   font-size: 24px;
-  color: #333;
-  background-color: #eee;
+  color: #fff;
+  background-color: transparent;
   border: none;
   border-radius: 5px;
   padding: 10px;
@@ -65,5 +66,42 @@ button {
 
 /* Change button color on hover */
 button:hover {
-  background-color: #ccc;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Style the operator button */
+.operator {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Change operator button color on hover */
+.operator:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Style the zero button */
+.zero {
+  grid-column: span 2;
+}
+
+/* Style the clear button */
+.clear {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #333;
+}
+
+/* Change clear button color on hover */
+.clear:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Style the equal button */
+.equal {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Change equal button color on hover */
+.equal:hover {
+  background-color: #eee;
 }
